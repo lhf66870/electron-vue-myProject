@@ -1,0 +1,155 @@
+// @import '~iview/src/styles/index.less';
+// // Here are the variables to cover, such as:
+// @primary-color: #8c0776;
+body>div {
+    font-family: "Helvetica", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, Helvetica, "PingFang SC", "Hiragino Sans GB", sans-serif !important;
+}
+
+html,
+body,
+body>div#app,
+.ivu-layout {
+    width: 100%;
+    height: 100%;
+}
+
+/**
+ *  筛选项样式
+ */
+
+/* 筛选选项组 */
+
+.filter-box {
+    padding: 10px;
+    width: 100%;
+    /* 搜索按钮/清空按钮 */
+    .search-button,
+    .clear-button {
+        width: 100%;
+        height: 40px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    /* 容器 */
+    .box-header {
+        width: 100%;
+        position: relative;
+    }
+    /* 布局左 */
+    .header-left {
+        margin-right: 240px;
+    }
+    /* 布局右 */
+    .header-right {
+        position: absolute;
+        width: 200px;
+        top: 0;
+        right: 0;
+    }
+    .box-item {
+        /* 筛选框外轮廓 */
+        width: 20%;
+        padding: 0 10px 10px 0;
+        box-sizing: border-box;
+        /* 筛选框边框 */
+        &-border {
+            padding: 7px;
+            padding-right: 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            position: relative;
+            background-color: #fff;
+            height: 40px !important;
+            .ivu-date-picker{
+                width:98%
+            }
+        }
+        /* 标注 */
+        &-label {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        /* ... */
+        .ivu-input-wrapper {
+            margin: 0 !important;
+        }
+        .ivu-input-wrapper-small .ivu-input-icon+.ivu-input {
+            padding-right: 7px;
+        }
+        /* 输入框格式化 */
+        .ivu-input {
+            border: 0;
+            outline: none;
+            box-shadow: none;
+        }
+        /* 两个输入框 */
+        .double-input {
+            width: 45% !important;
+        }
+        /* 中间横线 */
+        .double-input-line {
+            line-height: 24px;
+        }
+        /* 下拉选择框 */
+        .ivu-select-selection {
+            border-color: transparent;
+            box-shadow: none;
+        }
+        /* 日期选择框 */
+        .ivu-date-picker {
+            .ivu-input {
+                height: 22px;
+                padding-right: 22px;
+            }
+            /* 日期图标格式化 */
+            .ivu-input-icon {
+                line-height: 20px;
+                width: 22px;
+            }
+        }
+        /* 看好是两个日期在同一个item里的时候用的 */
+        .date-month-item {
+            width: 50%;
+        }
+        /* 省市联动选择框 */
+        .ivu-cascader {
+            .ivu-input {
+                height: 24px;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-right: 22px;
+            }
+        }
+    }
+}
+
+.user-btn-theme {
+    .ivu-btn-primary {
+        border-color: #00b0b0 !important;
+        background-color: #00b0b0 !important;
+    }
+}
+
+/* 浮动清除 */
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+/* 左浮动 */
+
+.left {
+    float: left;
+}
+
+/* 右浮动 */
+
+.right {
+    float: right;
+}
